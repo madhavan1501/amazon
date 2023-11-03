@@ -10,12 +10,13 @@ const Header = () => {
           alt="logo"
           className="h-10 cursor-pointer"
         />
-        <div className="h-10 relative min-w-[200px] flex-1 rounded overflow-hidden">
+        <div className="h-10 relative min-w-[200px] flex-1 ">
           <input
             type="text"
-            className="h-full w-full text-black pl-4 py-1 text-base font-semibold"
+            className="h-full w-full rounded-lg text-black pl-4 py-1 text-base font-semibold focus:ring-2 ring-orange-500 border-none outline-none"
+            placeholder="Search Amazon.in"
           />
-          <SearchIcon className="!h-full !w-10 absolute text-black bg-orange-400 hover:bg-orange-500 right-0 top-0 cursor-pointer font-bold text-base" />
+          <SearchIcon className="!h-full !w-10 absolute rounded-tr-lg rounded-br-lg text-black bg-orange-400 hover:bg-orange-500 right-0 top-0 cursor-pointer font-bold text-base" />
         </div>
       </div>
       <div className="flex items-center justify-around ">
