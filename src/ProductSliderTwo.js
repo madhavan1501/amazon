@@ -12,7 +12,9 @@ const ProductSliderTwo = ({ sliderTwo, heading1 = "", heading2 = "" }) => {
           {sliderTwo.map((e, i) => (
             <div className="p-1 " key={i}>
               <div className="h-52 w-60 bg-slate-50 grid place-items-center">
-                <img src={e} className="object-contain " alt="image" />
+                <a href={e.linkTo}>
+                  <img src={e.imgSrc} className="object-contain " alt="image" />
+                </a>
               </div>
             </div>
           ))}

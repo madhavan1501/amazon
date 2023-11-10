@@ -96,33 +96,131 @@ const Home = () => {
     },
   ];
   const sliderTwo = [
-    "./assets/slidertwo/1.jpg",
-    "./assets/slidertwo/2.jpg",
-    "./assets/slidertwo/3.jpg",
-    "./assets/slidertwo/4.jpg",
-    "./assets/slidertwo/5.jpg",
-    "./assets/slidertwo/6.jpg",
-    "./assets/slidertwo/7.jpg",
-    "./assets/slidertwo/8.jpg",
-    "./assets/slidertwo/9.jpg",
-    "./assets/slidertwo/10.jpg",
-    "./assets/slidertwo/11.jpg",
-    "./assets/slidertwo/12.jpg",
-    "./assets/slidertwo/13.jpg",
-    "./assets/slidertwo/14.jpg",
-    "./assets/slidertwo/15.jpg",
-    "./assets/slidertwo/16.jpg",
+    {
+      imgSrc: "./assets/slidertwo/1.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/2.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/3.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/4.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/5.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/6.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/7.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/8.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/9.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/10.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/11.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/12.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/13.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/14.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/15.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo/16.jpg",
+      linkTo: "/mobiles",
+    },
   ];
   const sliderTwo_2 = [
-    "./assets/slidertwo-2/1.jpg",
-    "./assets/slidertwo-2/2.jpg",
-    "./assets/slidertwo-2/3.jpg",
-    "./assets/slidertwo-2/4.jpg",
-    "./assets/slidertwo-2/5.jpg",
-    "./assets/slidertwo-2/6.jpg",
-    "./assets/slidertwo-2/7.jpg",
-    "./assets/slidertwo-2/8.jpg",
-    "./assets/slidertwo-2/9.jpg",
+    {
+      imgSrc: "./assets/slidertwo-2/1.jpg",
+      linkTo: "/mobiles",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo-2/2.jpg",
+      linkTo: "/laptops",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo-2/3.jpg",
+      linkTo: "/",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo-2/4.jpg",
+      linkTo: "/",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo-2/5.jpg",
+      linkTo: "/",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo-2/6.jpg",
+      linkTo: "/",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo-2/7.jpg",
+      linkTo: "/",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo-2/8.jpg",
+      linkTo: "/",
+    },
+
+    {
+      imgSrc: "./assets/slidertwo-2/9.jpg",
+      linkTo: "/",
+    },
   ];
   const [slider, setslider] = useState(-200);
   const prevbtn = () => {
@@ -222,6 +320,7 @@ const Home = () => {
           <SingleProduct
             heading={"Starting ₹349 | Bestselling headphones"}
             imgSrc={"./assets/air-pods/1.jpg"}
+            linkTo="/AirpodsAndWatch"
           />
           <Aceproduct
             title1="curtains"
@@ -248,6 +347,7 @@ const Home = () => {
           <SingleProduct
             heading={"Up to 80% off | Laptops & smartphones"}
             imgSrc={"./assets/laptop-banner-2.jpg"}
+            linkTo="/laptops"
           />
           <Aceproduct
             title1="Sport's Shoe"
@@ -270,10 +370,16 @@ const Home = () => {
             imgSrc3="./assets/gadgets/trimmer-1.jpg"
             imgSrc4="./assets/gadgets/mouse-1.jpg"
             heading="Books, Toys, Grooming and gaming | Starting ₹99"
+            linkTo1="/"
+            linkTo2="/"
+            linkTo3="/"
+            linkTo4="/laptopsAccessories"
+            linkTo5="/"
           />
           <SingleProduct
             heading={"Up to 70% off | Amazon Renewed"}
             imgSrc={"./assets/laptop-banner.jpg"}
+            linkTo="/AirpodsAndWatch"
           />
           <Aceproduct
             title1="Budget | Under ₹10,000"
@@ -285,6 +391,11 @@ const Home = () => {
             imgSrc3="./assets/mobiles/mobile-3.jpg"
             imgSrc4="./assets/mobiles/mobile-4.jpg"
             heading="Deals on smartphones that suits your budget"
+            linkTo1="/mobiles"
+            linkTo2="/mobiles"
+            linkTo3="/mobiles"
+            linkTo4="/mobiles"
+            linkTo5="/mobiles"
           />
         </div>
         <ProductSliderOne sliderOne={sliderOneObj} />
@@ -303,6 +414,7 @@ const Home = () => {
           <SingleProduct
             heading={"Up to 40% off | Deals on mobiles & accessories"}
             imgSrc={"./assets/mobile-banner-1.jpg"}
+            linkTo="/mobiles"
           />
           <Aceproduct
             title1="Beauty & grooming accessories"
@@ -325,6 +437,11 @@ const Home = () => {
             imgSrc3="./assets/box-2/3.jpg"
             imgSrc4="./assets/box-2/4.jpg"
             heading="Starting ₹199 | Shoes, jewellery & more"
+            linkTo1="/"
+            linkTo2="/"
+            linkTo3="/AirpodsAndWatch"
+            linkTo4="/"
+            linkTo5="/"
           />
         </div>
         <ProductSliderTwo
@@ -352,6 +469,11 @@ const Home = () => {
             imgSrc3="./assets/box-3/3.jpg"
             imgSrc4="./assets/box-3/4.jpg"
             heading="Up to 80% off | Deals on mice, keyboards & more"
+            linkTo1="/laptopsAccessories"
+            linkTo2="/laptopsAccessories"
+            linkTo3="/laptopsAccessories"
+            linkTo4="/laptopsAccessories"
+            linkTo5="/laptopsAccessories"
           />
           <Aceproduct
             title1="Chocolates"
@@ -386,6 +508,11 @@ const Home = () => {
             imgSrc3="./assets/box-3/15.jpg"
             imgSrc4="./assets/box-3/16.jpg"
             heading="Great Indian Festival | Brands in focus"
+            linkTo1="/laptops"
+            linkTo2="/"
+            linkTo3="/"
+            linkTo4="/AirpodsAndWatch"
+            linkTo5="/"
           />
         </div>
         <ProductSliderTwo
@@ -394,7 +521,7 @@ const Home = () => {
           heading2={"Explore all categories"}
         />
       </div>
-      <Footer />
+      <Footer backToTop={"/"} />
     </>
   );
 };

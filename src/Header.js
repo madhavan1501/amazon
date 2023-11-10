@@ -5,11 +5,13 @@ const Header = () => {
   return (
     <header className="bg-slate-900 text-white grid grid-cols-[2fr_1fr] capitalize py-2  gap-12 w-full px-4 box-border">
       <div className="flex justify-between items-center gap-12">
-        <img
-          src="../assets/logo.webp"
-          alt="logo"
-          className="h-10 cursor-pointer"
-        />
+        <a href="/">
+          <img
+            src="../assets/logo.webp"
+            alt="logo"
+            className="h-10 cursor-pointer"
+          />
+        </a>
         <div className="h-10 relative min-w-[200px] flex-1 ">
           <input
             type="text"

@@ -1,9 +1,9 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ backToTop }) => {
   return (
     <>
-      <div className="grid place-items-center space-y-1 py-8">
+      <div className="grid place-items-center space-y-1 py-8 border-t-[1px] border-slate-400">
         <p className="text-sm ">See personalized recommendations</p>
         <button className="bg-yellow-400 text-sm font-semibold py-1 px-28 rounded-md">
           Sign In
@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
 
       <a
-        href="/"
+        href={backToTop}
         className="py-3 block text-center bg-gray-700 hover:bg-gray-600 text-white w-full"
       >
         Back to top
