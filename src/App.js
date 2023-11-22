@@ -5,6 +5,14 @@ import Mobile from "./mobile";
 import Laptop from "./Laptop";
 import LaptopAccessories from "./LaptopAccessories";
 import AirpodsAndWatch from "./AirpodsAndWatch";
+import HomeProducts from "./HomeProducts";
+import HomeApplications from "./HomeApplications";
+import KitchenProducts from "./KitchenProducts";
+import ShoesAndBags from "./ShoesAndBags";
+import DailyNeeds from "./DailyNeeds";
+import Grocery from "./Grocery";
+import Toys from "./Toys";
+import Fasion from "./Fasion";
 
 function App() {
   return (
@@ -16,6 +24,14 @@ function App() {
           <Route path="/laptops" element={<Laptop />} />
           <Route path="/laptopsAccessories" element={<LaptopAccessories />} />
           <Route path="/AirpodsAndWatch" element={<AirpodsAndWatch />} />
+          <Route path="/HomeProducts" element={<HomeProducts />} />
+          <Route path="/HomeAppliances" element={<HomeApplications />} />
+          <Route path="/KitchenProducts" element={<KitchenProducts />} />
+          <Route path="/ShoesAndBags" element={<ShoesAndBags />} />
+          <Route path="/DailyNeeds" element={<DailyNeeds />} />
+          <Route path="/Grocery" element={<Grocery />} />
+          <Route path="/Toys" element={<Toys />} />
+          <Route path="/Fasion" element={<Fasion />} />
         </Routes>
       </BrowserRouter>
     </>

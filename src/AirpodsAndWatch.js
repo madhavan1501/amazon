@@ -164,7 +164,7 @@ const AirpodsAndWatch = () => {
       rating: 4,
       finalPrice: "50,999",
       mrp: "59,999",
-      offerPercent: "115",
+      offerPercent: "15",
     },
   ];
 

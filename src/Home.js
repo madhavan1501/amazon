@@ -189,37 +189,37 @@ const Home = () => {
 
     {
       imgSrc: "./assets/slidertwo-2/3.jpg",
-      linkTo: "/",
+      linkTo: "/HomeProducts",
     },
 
     {
       imgSrc: "./assets/slidertwo-2/4.jpg",
-      linkTo: "/",
+      linkTo: "/HomeAppliances",
     },
 
     {
       imgSrc: "./assets/slidertwo-2/5.jpg",
-      linkTo: "/",
+      linkTo: "/Fasion",
     },
 
     {
       imgSrc: "./assets/slidertwo-2/6.jpg",
-      linkTo: "/",
+      linkTo: "/Grocery",
     },
 
     {
       imgSrc: "./assets/slidertwo-2/7.jpg",
-      linkTo: "/",
+      linkTo: "/Toys",
     },
 
     {
       imgSrc: "./assets/slidertwo-2/8.jpg",
-      linkTo: "/",
+      linkTo: "/Fasion",
     },
 
     {
       imgSrc: "./assets/slidertwo-2/9.jpg",
-      linkTo: "/",
+      linkTo: "/HomeProducts",
     },
   ];
   const [slider, setslider] = useState(-200);
@@ -332,6 +332,11 @@ const Home = () => {
             imgSrc3="./assets/storage-1.jpg"
             imgSrc4="./assets/showpiece-1.jpg"
             heading="Minimum 50% off | Restyle your home"
+            linkTo1="/HomeProducts"
+            linkTo2="/HomeProducts"
+            linkTo3="/HomeProducts"
+            linkTo4="/HomeProducts"
+            linkTo5="/HomeProducts"
           />
           <Aceproduct
             title1="Starting ₹169 | Home products"
@@ -343,6 +348,11 @@ const Home = () => {
             imgSrc3="./assets/dry-fruits-banner.jpg"
             imgSrc4="./assets/dress-banner.jpg"
             heading="Up to 70% off | Deals on Amazon Brands & more"
+            linkTo1="/HomeProducts"
+            linkTo2="/KitchenProducts"
+            linkTo3="/Grocery"
+            linkTo4="/Fasion"
+            linkTo5="/Fasion"
           />
           <SingleProduct
             heading={"Up to 80% off | Laptops & smartphones"}
@@ -359,6 +369,11 @@ const Home = () => {
             imgSrc3="./assets/shoes/shoe-3.jpg"
             imgSrc4="./assets/bags/bag-1.jpg"
             heading="Starting ₹199 | Shoes & handbags"
+            linkTo1="/ShoesAndBags"
+            linkTo2="/ShoesAndBags"
+            linkTo3="/ShoesAndBags"
+            linkTo4="/ShoesAndBags"
+            linkTo5="/ShoesAndBags"
           />
           <Aceproduct
             title1="Childrens book | Starting ₹99"
@@ -370,9 +385,9 @@ const Home = () => {
             imgSrc3="./assets/gadgets/trimmer-1.jpg"
             imgSrc4="./assets/gadgets/mouse-1.jpg"
             heading="Books, Toys, Grooming and gaming | Starting ₹99"
-            linkTo1="/"
-            linkTo2="/"
-            linkTo3="/"
+            linkTo1="/Toys"
+            linkTo2="/Toys"
+            linkTo3="/DailyNeeds"
             linkTo4="/laptopsAccessories"
             linkTo5="/"
           />
@@ -410,6 +425,11 @@ const Home = () => {
             imgSrc3="./assets/pillow-1.jpg"
             imgSrc4="./assets/kitchen-banner-1.jpg"
             heading="Up to 70% off | Get festive ready with products"
+            linkTo1="/Fasion"
+            linkTo2="/Fasion"
+            linkTo3="/HomeProducts"
+            linkTo4="/KitchenProducts"
+            linkTo5="/"
           />
           <SingleProduct
             heading={"Up to 40% off | Deals on mobiles & accessories"}
@@ -426,6 +446,11 @@ const Home = () => {
             imgSrc3="./assets/box-1/3.jpg"
             imgSrc4="./assets/box-1/4.jpg"
             heading="Price crash | Lowest prices of the year | Amazon brands"
+            linkTo1="/DailyNeeds"
+            linkTo2="/Toys"
+            linkTo3="/DailyNeeds"
+            linkTo4="/DailyNeeds"
+            linkTo5="/"
           />
           <Aceproduct
             title1="Sports Shoes"
@@ -437,11 +462,11 @@ const Home = () => {
             imgSrc3="./assets/box-2/3.jpg"
             imgSrc4="./assets/box-2/4.jpg"
             heading="Starting ₹199 | Shoes, jewellery & more"
-            linkTo1="/"
-            linkTo2="/"
+            linkTo1="/ShoesAndBags"
+            linkTo2="/Fasion"
             linkTo3="/AirpodsAndWatch"
-            linkTo4="/"
-            linkTo5="/"
+            linkTo4="/ShoesAndBags"
+            linkTo5="/Fasion"
           />
         </div>
         <ProductSliderTwo
@@ -485,6 +510,11 @@ const Home = () => {
             imgSrc3="./assets/box-3/7.jpg"
             imgSrc4="./assets/box-3/8.jpg"
             heading="Up to 60% off | Gifting specials"
+            linkTo1="/Grocery"
+            linkTo2="/Grocery"
+            linkTo3="/Grocery"
+            linkTo4="/Grocery"
+            linkTo5="/Grocery"
           />
 
           <Aceproduct
@@ -497,6 +527,11 @@ const Home = () => {
             imgSrc3="./assets/box-3/11.jpg"
             imgSrc4="./assets/box-3/12.jpg"
             heading="Min. 60% off | Toys & games | Made for Amazon"
+            linkTo1="/Toys"
+            linkTo2="/Toys"
+            linkTo3="/Toys"
+            linkTo4="/Toys"
+            linkTo5="/Toys"
           />
           <Aceproduct
             title1="Up to 40% off | Acer Laptops"
@@ -509,10 +544,10 @@ const Home = () => {
             imgSrc4="./assets/box-3/16.jpg"
             heading="Great Indian Festival | Brands in focus"
             linkTo1="/laptops"
-            linkTo2="/"
-            linkTo3="/"
+            linkTo2="/DailyNeeds"
+            linkTo3="/HomeAppliances"
             linkTo4="/AirpodsAndWatch"
-            linkTo5="/"
+            linkTo5="/AirpodsAndWatch"
           />
         </div>
         <ProductSliderTwo
