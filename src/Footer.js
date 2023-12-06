@@ -110,11 +110,13 @@ const Footer = ({ backToTop }) => {
       </div>
       <div className="bg-gray-800 grid place-items-center py-6">
         <div className="grid place-items-center space-y-6">
-          <img
-            src="../assets/logo.webp"
-            alt="logo"
-            className=" h-8 cursor-pointer"
-          />
+          <a href="/">
+            <img
+              src="../assets/logo.webp"
+              alt="logo"
+              className=" h-8 cursor-pointer"
+            />
+          </a>
           <div className="text-white grid place-items-center text-xs space-y-1 font-semibold">
             <ul className="flex space-x-4  text-gray-300 ">
               <li className="hover:cursor-pointer hover:underline">

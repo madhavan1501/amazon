@@ -389,7 +389,7 @@ const Home = () => {
             linkTo2="/Toys"
             linkTo3="/DailyNeeds"
             linkTo4="/laptopsAccessories"
-            linkTo5="/"
+            linkTo5="/laptopsAccessories"
           />
           <SingleProduct
             heading={"Up to 70% off | Amazon Renewed"}
@@ -429,7 +429,7 @@ const Home = () => {
             linkTo2="/Fasion"
             linkTo3="/HomeProducts"
             linkTo4="/KitchenProducts"
-            linkTo5="/"
+            linkTo5="/HomeProducts"
           />
           <SingleProduct
             heading={"Up to 40% off | Deals on mobiles & accessories"}
@@ -450,7 +450,7 @@ const Home = () => {
             linkTo2="/Toys"
             linkTo3="/DailyNeeds"
             linkTo4="/DailyNeeds"
-            linkTo5="/"
+            linkTo5="/Toys"
           />
           <Aceproduct
             title1="Sports Shoes"

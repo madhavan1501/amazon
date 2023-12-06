@@ -13,27 +13,32 @@ import DailyNeeds from "./DailyNeeds";
 import Grocery from "./Grocery";
 import Toys from "./Toys";
 import Fasion from "./Fasion";
+import Cart from "./Cart";
+import { Context } from "./Context";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/mobiles" element={<Mobile />} />
-          <Route path="/laptops" element={<Laptop />} />
-          <Route path="/laptopsAccessories" element={<LaptopAccessories />} />
-          <Route path="/AirpodsAndWatch" element={<AirpodsAndWatch />} />
-          <Route path="/HomeProducts" element={<HomeProducts />} />
-          <Route path="/HomeAppliances" element={<HomeApplications />} />
-          <Route path="/KitchenProducts" element={<KitchenProducts />} />
-          <Route path="/ShoesAndBags" element={<ShoesAndBags />} />
-          <Route path="/DailyNeeds" element={<DailyNeeds />} />
-          <Route path="/Grocery" element={<Grocery />} />
-          <Route path="/Toys" element={<Toys />} />
-          <Route path="/Fasion" element={<Fasion />} />
-        </Routes>
-      </BrowserRouter>
+      <Context>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/mobiles" element={<Mobile />} />
+            <Route path="/laptops" element={<Laptop />} />
+            <Route path="/laptopsAccessories" element={<LaptopAccessories />} />
+            <Route path="/AirpodsAndWatch" element={<AirpodsAndWatch />} />
+            <Route path="/HomeProducts" element={<HomeProducts />} />
+            <Route path="/HomeAppliances" element={<HomeApplications />} />
+            <Route path="/KitchenProducts" element={<KitchenProducts />} />
+            <Route path="/ShoesAndBags" element={<ShoesAndBags />} />
+            <Route path="/DailyNeeds" element={<DailyNeeds />} />
+            <Route path="/Grocery" element={<Grocery />} />
+            <Route path="/Toys" element={<Toys />} />
+            <Route path="/Fasion" element={<Fasion />} />
+            <Route path="/Cart" element={<Cart />} />
+          </Routes>
+        </BrowserRouter>
+      </Context>
     </>
   );
 }

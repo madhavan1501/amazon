@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import productData from "./Context";
 
 const Productgrid = ({ productArray }) => {
-  console.log(productArray);
+  const [data, dispatch] = useContext(productData);
+  const addToCart = (e) => {
+    dispatch({ type: "addToCart", value: e });
+  };
   return (
     <>
       <div className=" grid w-full grid-cols-4 ">
@@ -26,8 +30,8 @@ const Productgrid = ({ productArray }) => {
               <div className="flex ">
                 {Array(e.rating)
                   .fill("./assets/star.png")
-                  .map((e) => (
-                    <img src={e} className="h-3 w-3" />
+                  .map((e, i) => (
+                    <img key={i} src={e} className="h-3 w-3" />
                   ))}
               </div>
               <div className="min-h-11 flex items-end gap-2 ">
@@ -45,7 +49,10 @@ const Productgrid = ({ productArray }) => {
               </div>
               <div className="text-base ">Free Delivery By Amazon</div>
               <div className="flex justify-center py-2  ">
-                <button className="bg-yellow-400 hover:bg-yellow-300 w-[80%] py-2 h-10 rounded-full text-lg ">
+                <button
+                  onClick={() => addToCart(e)}
+                  className="bg-yellow-400 hover:bg-yellow-300 w-[80%] py-2 h-10 rounded-full text-lg "
+                >
                   Add to cart
                 </button>
               </div>
