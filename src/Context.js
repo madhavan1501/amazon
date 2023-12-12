@@ -11,10 +11,9 @@ export const Context = ({ children }) => {
           JSON.parse(localStorage.getItem("productsInCart")) || [];
         prevData.push(action.value);
         localStorage.setItem("productsInCart", JSON.stringify(prevData));
+        break;
       }
-      case "": {
-        return;
-      }
+
       default:
         return state;
     }

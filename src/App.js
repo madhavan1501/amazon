@@ -15,6 +15,7 @@ import Toys from "./Toys";
 import Fasion from "./Fasion";
 import Cart from "./Cart";
 import { Context } from "./Context";
+import LoginPage from "./LoginPage";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="/Toys" element={<Toys />} />
             <Route path="/Fasion" element={<Fasion />} />
             <Route path="/Cart" element={<Cart />} />
+            <Route path="/LoginPage" element={<LoginPage />} />
           </Routes>
         </BrowserRouter>
       </Context>

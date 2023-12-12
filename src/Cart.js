@@ -6,12 +6,22 @@ import productData from "./Context";
 const Cart = () => {
   const [data, dispatch] = useContext(productData);
   const [productsInCart, setProductsInCart] = useState(data);
-  const [productsInSaved, setProducsInSaved] = useState([]);
+  const [productsInSaved, setProductsInSaved] = useState(
+    JSON.parse(localStorage.getItem("productsInSaved")) || []
+  );
   const [cartState, setCartState] = useState({
     isCartHasProducts: productsInCart.length ? true : false,
     isProductsSaved: productsInSaved.length ? true : false,
   });
+
+  useEffect(() => {
+    setCartState({
+      isCartHasProducts: productsInCart.length ? true : false,
+      isProductsSaved: productsInSaved.length ? true : false,
+    });
+  }, [productsInCart, productsInSaved]);
   const [cartValue, setCartValue] = useState(0);
+
   useEffect(() => {
     let total = 0;
     productsInCart.map(
@@ -21,6 +31,56 @@ const Cart = () => {
     setCartValue(total);
   }, [productsInCart]);
 
+  const qtyChanged = (thisElement, index) => {
+    const modifidedCart = productsInCart.map((e, i) => {
+      if (index === i) {
+        if (e.cartFinalPrice) {
+          return {
+            ...e,
+            // cartFinalPrice:e.finalPrice,
+            finalPrice: (
+              parseInt(e.cartFinalPrice.replace(",", "")) *
+              parseInt(thisElement.target.value.replace("Qty: ", ""))
+            ).toString(),
+          };
+        } else {
+          return {
+            ...e,
+            cartFinalPrice: e.finalPrice,
+            finalPrice: (
+              parseInt(e.finalPrice.replace(",", "")) *
+              parseInt(thisElement.target.value.replace("Qty: ", ""))
+            ).toString(),
+          };
+        }
+      } else return e;
+    });
+    setProductsInCart(modifidedCart);
+  };
+  const savedBtnDelete = (index) => {
+    const modifidedCart = productsInSaved.filter((e, i) => i !== index);
+    setProductsInSaved(modifidedCart);
+    localStorage.setItem("productsInSaved", JSON.stringify(modifidedCart));
+  };
+  const btnDelete = (index) => {
+    const modifidedCart = productsInCart.filter((e, i) => i !== index);
+    setProductsInCart(modifidedCart);
+    localStorage.setItem("productsInCart", JSON.stringify(modifidedCart));
+  };
+  const addToSaveLater = (index) => {
+    const obj = productsInCart.filter((e, i) => i === index);
+    const modifided = [...productsInSaved, obj[0]];
+    setProductsInSaved(modifided);
+    localStorage.setItem("productsInSaved", JSON.stringify(modifided));
+    btnDelete(index);
+  };
+  const addToCart = (index) => {
+    const obj = productsInSaved.filter((e, i) => i === index);
+    const modifided = [...productsInCart, obj[0]];
+    setProductsInCart(modifided);
+    localStorage.setItem("productsInCart", JSON.stringify(modifided));
+    savedBtnDelete(index);
+  };
   return (
     <>
       <Header />
@@ -74,7 +134,7 @@ const Cart = () => {
                   </div>
                 </div>
 
-                <div>
+                <div className="max-h-[30vw] overflow-y-scroll">
                   {productsInCart.map((e, index) => (
                     <div
                       key={index}
@@ -118,6 +178,9 @@ const Cart = () => {
                               <select
                                 className="border-[1px] border-slate-500 rounded-md hover:cursor-pointer bg-slate-100 text-sm p-1 outline-none"
                                 style={{ boxShadow: `0 0 6px 0 gray` }}
+                                onChange={(thisElement) =>
+                                  qtyChanged(thisElement, index)
+                                }
                               >
                                 <option>Qty: 1</option>
                                 <option>Qty: 2</option>
@@ -125,14 +188,23 @@ const Cart = () => {
                                 <option>Qty: 4</option>
                                 <option>Qty: 5</option>
                               </select>
-                              <button className="text-blue-500 hover:underline text-sm">
+                              <button
+                                onClick={() => btnDelete(index)}
+                                className="text-blue-500 hover:underline text-sm"
+                              >
                                 Delete
                               </button>
-                              <button className="text-blue-500 hover:underline text-sm">
+                              <button
+                                onClick={() => addToSaveLater(index)}
+                                className="text-blue-500 hover:underline text-sm"
+                              >
                                 Save for later
                               </button>
                               <button>
-                                <a className="text-blue-500 hover:underline text-sm ">
+                                <a
+                                  className="text-blue-500 hover:underline text-sm "
+                                  href={e.productsPath}
+                                >
                                   See more like this
                                 </a>
                               </button>
@@ -160,7 +232,7 @@ const Cart = () => {
                         <span className="text-sm font-bold  self-start ">
                           ₹
                         </span>
-                        <span className="font-bold">{cartValue}</span>
+                        <span className="font-bold">{cartValue}.00</span>
                       </span>
                     </p>
                   </div>
@@ -204,7 +276,7 @@ const Cart = () => {
                         <span className="text-sm font-bold  self-start ">
                           ₹
                         </span>
-                        <span className="font-bold">{cartValue}</span>
+                        <span className="font-bold">{cartValue}.00</span>
                       </span>
                     </p>
                   </div>
@@ -263,23 +335,32 @@ const Cart = () => {
                           <span className="flex ">
                             <span className="self-start text-lg">₹</span>
                             <span className="text-lg font-semibold">
-                              {e.price}
+                              {e.finalPrice}
                             </span>
                           </span>
                         </div>
                       </div>
                       <div className="flex justify-center py-2  ">
-                        <button className="bg-slate-50 hover:bg-slate-100 w-[80%] border-[1px] border-slate-500 rounded text-base ">
+                        <button
+                          onClick={() => addToCart(index)}
+                          className="bg-slate-50 hover:bg-slate-100 w-[80%] border-[1px] border-slate-500 rounded text-base "
+                        >
                           Move to cart
                         </button>
                       </div>
                       <div>
                         <div className="flex flex-col items-start">
-                          <button className="text-blue-500 hover:underline text-sm">
+                          <button
+                            onClick={() => savedBtnDelete(index)}
+                            className="text-blue-500 hover:underline text-sm"
+                          >
                             Delete
                           </button>
                           <button>
-                            <a className="text-blue-500 hover:underline text-sm ">
+                            <a
+                              className="text-blue-500 hover:underline text-sm "
+                              href={e.productsPath}
+                            >
                               See more like this
                             </a>
                           </button>

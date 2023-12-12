@@ -1,6 +1,7 @@
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartSharpIcon from "@mui/icons-material/ShoppingCartSharp";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="bg-slate-900 text-white grid grid-cols-[2fr_1fr] capitalize py-2  gap-12 w-full  h-[68px] px-4 box-border">
@@ -12,7 +13,7 @@ const Header = () => {
           <img
             src="../assets/logo.webp"
             alt="logo"
-            className="h-10 cursor-pointer  "
+            className="h-10 cursor-pointer select-none "
           />
         </a>
         <div className="h-10 relative min-w-[200px] flex-1 ">
@@ -25,16 +26,23 @@ const Header = () => {
         </div>
       </div>
       <div className="flex items-center justify-around ">
-        <div className="h-full  text-lg font-semibold cursor-pointer   hover:border-2">
-          <p className="text-sm">hello, sign</p>
-          <p className="font-bold">account</p>
-        </div>
+        <Link
+          to={"/LoginPage"}
+          className="h-full  text-lg font-semibold cursor-pointer   hover:border-2"
+        >
+          <p className="text-sm select-none">hello, sign</p>
+          <p className="font-bold select-none">account</p>
+        </Link>
         <div className="h-full  text-lg font-semibold  cursor-pointer  hover:border-2">
-          <p className="text-sm">returns</p>
-          <p className="font-bold">& orders</p>
+          <p className="text-sm select-none">returns</p>
+          <p className="font-bold select-none">& orders</p>
         </div>
         <div className="h-full  text-xl mt-3 cursor-pointer font-bold   hover:border-2">
-          <a href="https://www.primevideo.com/" target="blank">
+          <a
+            href="https://www.primevideo.com/"
+            target="blank"
+            className="select-none"
+          >
             prime
           </a>
         </div>
@@ -43,7 +51,7 @@ const Header = () => {
           className=" h-full  text-base  flex items-center cursor-pointer  hover:border-2"
         >
           <ShoppingCartSharpIcon />
-          <p className="font-bold">cart</p>
+          <p className="font-bold select-none">cart</p>
         </a>
       </div>
     </header>

@@ -11,6 +11,7 @@ const Grocery = () => {
       finalPrice: "699",
       mrp: "1,799",
       offerPercent: "61",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/2.webp",
@@ -19,6 +20,7 @@ const Grocery = () => {
       finalPrice: "284",
       mrp: "999",
       offerPercent: "72",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/3.webp",
@@ -27,6 +29,7 @@ const Grocery = () => {
       finalPrice: "724",
       mrp: "1,599",
       offerPercent: "55",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/4.webp",
@@ -35,6 +38,7 @@ const Grocery = () => {
       finalPrice: "289",
       mrp: "375",
       offerPercent: "27",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/5.webp",
@@ -43,6 +47,7 @@ const Grocery = () => {
       finalPrice: "480",
       mrp: "895",
       offerPercent: "46",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/6.webp",
@@ -51,6 +56,7 @@ const Grocery = () => {
       finalPrice: "130",
       mrp: "190",
       offerPercent: "32",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/7.webp",
@@ -59,6 +65,7 @@ const Grocery = () => {
       finalPrice: "213",
       mrp: "225",
       offerPercent: "12",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/8.webp",
@@ -67,6 +74,7 @@ const Grocery = () => {
       finalPrice: "528",
       mrp: "600",
       offerPercent: "12",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/9.webp",
@@ -75,6 +83,7 @@ const Grocery = () => {
       finalPrice: "199",
       mrp: "179",
       offerPercent: "10",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/10.webp",
@@ -83,6 +92,7 @@ const Grocery = () => {
       finalPrice: "839",
       mrp: "1,200",
       offerPercent: "30",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/11.webp",
@@ -91,6 +101,7 @@ const Grocery = () => {
       finalPrice: "288",
       mrp: "349",
       offerPercent: "17",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/12.webp",
@@ -99,6 +110,7 @@ const Grocery = () => {
       finalPrice: "955",
       mrp: "1,199",
       offerPercent: "20",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/13.webp",
@@ -107,6 +119,7 @@ const Grocery = () => {
       finalPrice: "336",
       mrp: "495",
       offerPercent: "32",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/14.webp",
@@ -115,6 +128,7 @@ const Grocery = () => {
       finalPrice: "79",
       mrp: "99",
       offerPercent: "20",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/15.webp",
@@ -123,6 +137,7 @@ const Grocery = () => {
       finalPrice: "25",
       mrp: "28",
       offerPercent: "11",
+      productsPath: "Grocery",
     },
     {
       imgSrc: "./assets/productGrid/Grocery/16.webp",
@@ -131,6 +146,7 @@ const Grocery = () => {
       finalPrice: "150",
       mrp: "200",
       offerPercent: "25",
+      productsPath: "Grocery",
     },
   ];
   return (

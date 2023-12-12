@@ -11,6 +11,7 @@ const HomeApplications = () => {
       finalPrice: "24,999",
       mrp: "39,999",
       offerPercent: "38",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/1.jpg",
@@ -19,6 +20,7 @@ const HomeApplications = () => {
       finalPrice: "22,999",
       mrp: "42,999",
       offerPercent: "47",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/3.jpg",
@@ -27,6 +29,7 @@ const HomeApplications = () => {
       finalPrice: "13,499",
       mrp: "28,999",
       offerPercent: "48",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/4.jpg",
@@ -35,6 +38,7 @@ const HomeApplications = () => {
       finalPrice: "39,999",
       mrp: "69,999",
       offerPercent: "44",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/5.webp",
@@ -43,6 +47,7 @@ const HomeApplications = () => {
       finalPrice: "34,559",
       mrp: "53,999",
       offerPercent: "36",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/6.webp",
@@ -51,6 +56,7 @@ const HomeApplications = () => {
       finalPrice: "12,999",
       mrp: "27,599",
       offerPercent: "54",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/7.webp",
@@ -59,6 +65,7 @@ const HomeApplications = () => {
       finalPrice: "16,499",
       mrp: "32,499",
       offerPercent: "51",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/8.webp",
@@ -67,6 +74,7 @@ const HomeApplications = () => {
       finalPrice: "15,399",
       mrp: "21,799",
       offerPercent: "26",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/9.webp",
@@ -75,6 +83,7 @@ const HomeApplications = () => {
       finalPrice: "10,299",
       mrp: "15,999",
       offerPercent: "31",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/10.webp",
@@ -83,6 +92,7 @@ const HomeApplications = () => {
       finalPrice: "27,999",
       mrp: "43,599",
       offerPercent: "36",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/11.webp",
@@ -91,6 +101,7 @@ const HomeApplications = () => {
       finalPrice: "29,900",
       mrp: "52,999",
       offerPercent: "43",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/12.webp",
@@ -99,6 +110,7 @@ const HomeApplications = () => {
       finalPrice: "17,499",
       mrp: "24,999",
       offerPercent: "30",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/13.webp",
@@ -107,6 +119,7 @@ const HomeApplications = () => {
       finalPrice: "14,599",
       mrp: "19,999",
       offerPercent: "31",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/14.webp",
@@ -114,7 +127,8 @@ const HomeApplications = () => {
       rating: 4,
       finalPrice: "14,599",
       mrp: "18,999",
-      offerPercent: "24,999",
+      offerPercent: "24",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/15.webp",
@@ -123,6 +137,7 @@ const HomeApplications = () => {
       finalPrice: "14,259",
       mrp: "18,999",
       offerPercent: "25",
+      productsPath: "HomeAppliances",
     },
     {
       imgSrc: "./assets/productGrid/HomeAppliances/16.webp",
@@ -131,6 +146,7 @@ const HomeApplications = () => {
       finalPrice: "34,999",
       mrp: "58,899",
       offerPercent: "40",
+      productsPath: "HomeAppliances",
     },
   ];
   return (

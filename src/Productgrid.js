@@ -1,10 +1,15 @@
 import React, { useContext } from "react";
 import productData from "./Context";
-
 const Productgrid = ({ productArray }) => {
   const [data, dispatch] = useContext(productData);
   const addToCart = (e) => {
-    dispatch({ type: "addToCart", value: e });
+    const alreadyInCart = data.filter((element) => element.imgSrc === e.imgSrc);
+    if (alreadyInCart.length) {
+      alert("Already Added In Cart");
+    } else {
+      dispatch({ type: "addToCart", value: e });
+      window.location.reload();
+    }
   };
   return (
     <>
@@ -51,7 +56,8 @@ const Productgrid = ({ productArray }) => {
               <div className="flex justify-center py-2  ">
                 <button
                   onClick={() => addToCart(e)}
-                  className="bg-yellow-400 hover:bg-yellow-300 w-[80%] py-2 h-10 rounded-full text-lg "
+                  className="bg-yellow-400 hover:bg-yellow-300 w-[80%] py-2 h-10 rounded-full text-lg active:!shadow-none outline-yellow-600"
+                  style={{ boxShadow: "2px 4px 8px 1px grey" }}
                 >
                   Add to cart
                 </button>
