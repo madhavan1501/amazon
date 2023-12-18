@@ -24,7 +24,7 @@ const Productgrid = ({ productArray }) => {
               <div className="grid place-items-center  py-3">
                 <img
                   src={e.imgSrc}
-                  alt="image"
+                  alt="img"
                   className="object-contain h-56 min-[500px]:h-32"
                 />
               </div>
@@ -39,7 +39,7 @@ const Productgrid = ({ productArray }) => {
                 {Array(e.rating)
                   .fill("./assets/star.png")
                   .map((e, i) => (
-                    <img key={i} src={e} className="h-3 w-3" />
+                    <img key={i} src={e} alt="rating" className="h-3 w-3" />
                   ))}
               </div>
               <div className="min-h-11 flex items-end gap-2 ">

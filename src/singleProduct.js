@@ -11,7 +11,7 @@ const SingleProduct = ({ heading = "title", imgSrc = "hi", linkTo = "/" }) => {
       <a href={linkTo}>
         <img
           src={imgSrc}
-          alt="image"
+          alt="img"
           className="object-contain object-center h-[180px] w-[300px] hover:cursor-pointer min-[700px]:h-[200px] min-[1100px]:h-[250px] min-[1300px]:h-[280px] min-[1300px]:w-full min-[1500px]:h-[250px]"
         />
       </a>
