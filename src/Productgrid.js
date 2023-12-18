@@ -8,7 +8,6 @@ const Productgrid = ({ productArray }) => {
       alert("Already Added In Cart");
     } else {
       dispatch({ type: "addToCart", value: e });
-      window.location.reload();
     }
   };
   return (
