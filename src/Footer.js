@@ -1,18 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = ({ backToTop }) => {
   return (
     <>
       <div className="grid place-items-center space-y-1 py-8 border-t-[1px] border-slate-400">
         <p className="text-sm ">See personalized recommendations</p>
-        <button className="bg-yellow-400 text-sm font-semibold py-1 px-28 rounded-md">
-          Sign In
-        </button>
+        <a href="/LoginPage">
+          <button className="bg-yellow-400 text-sm font-semibold py-1 px-28 rounded-md">
+            Sign In
+          </button>
+        </a>
         <p className="text-xs font-semibold">
           New costumer?
-          <span className="text-xs font-semibold text-blue-600 ml-2">
-            Start here
-          </span>
+          <a href="/LoginPage">
+            <span className="text-xs font-semibold text-blue-600 ml-2">
+              Start here
+            </span>
+          </a>
         </p>
       </div>
 
@@ -23,8 +28,10 @@ const Footer = ({ backToTop }) => {
         Back to top
       </a>
 
-      <div className="bg-gray-800 w-full text-white grid place-items-center py-12 border-b-[1px] border-b-slate-700">
-        <div className="flex gap-32">
+      <div className="bg-gray-800 w-full text-white grid place-items-center py-2 border-b-[1px] border-b-slate-700">
+        {/* <div className="bg-gray-800 w-full text-white grid place-items-center py-12 border-b-[1px] border-b-slate-700"> */}
+        <div className="flex gap-2 px-2">
+          {/* <div className="flex gap-32"> */}
           <div>
             <ul className="text-sm text-gray-300 space-y-2 font-semibold">
               <li className="font-bold text-base text-white ">
@@ -108,7 +115,7 @@ const Footer = ({ backToTop }) => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-800 grid place-items-center py-6">
+      <div className="bg-gray-800 grid place-items-center py-2">
         <div className="grid place-items-center space-y-6">
           <a href="/">
             <img
@@ -117,8 +124,9 @@ const Footer = ({ backToTop }) => {
               className=" h-8 cursor-pointer"
             />
           </a>
-          <div className="text-white grid place-items-center text-xs space-y-1 font-semibold">
-            <ul className="flex space-x-4  text-gray-300 ">
+          <div className="text-white grid place-items-start text-xs space-y-1 font-semibold w-80 overflow-hidden p-5 min-[500px]:w-full  min-[850px]:place-items-center">
+            {/* <div className="text-white grid place-items-center text-xs space-y-1 font-semibold "> */}
+            <ul className="flex space-x-2  text-gray-300 ">
               <li className="hover:cursor-pointer hover:underline">
                 Australia
               </li>
@@ -155,7 +163,7 @@ const Footer = ({ backToTop }) => {
         </div>
       </div>
       <div className="grid place-items-center bg-[#131A22] text-gray-200 space-y-10 py-8">
-        <div className="grid grid-cols-4 text-xs gap-6  ">
+        <div className="grid grid-cols-4 text-xs gap-2 px-2  ">
           <ul className="text-gray-400 hover:cursor-pointer hover:underline">
             <li className="text-gray-200 font-semibold">AbeBooks</li>
             <li>Books, art</li>
@@ -197,8 +205,8 @@ const Footer = ({ backToTop }) => {
             <li>Over 15 million podcast episodes</li>
           </ul>
         </div>
-        <div className="grid place-items-center text-xs space-y-1">
-          <p className="space-x-4">
+        <div className="grid place-items-center text-xs space-y-1 p-2">
+          <p className="space-x-2">
             <span className="font-semibold hover:cursor-pointer hover:underline">
               Conditions of Use & Sale
             </span>

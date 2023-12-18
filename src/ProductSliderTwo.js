@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductSliderTwo = ({ sliderTwo, heading1 = "", heading2 = "" }) => {
   return (
-    <div className="w-full  p-8 ">
+    <div className="w-[100vw]  p-8 ">
       <div className="w-full bg-white shadow-2xl px-6 py-2 overflow-hidden ">
         <div className="flex  items-center">
           <h1 className="text-2xl font-semibold">{heading1}</h1>

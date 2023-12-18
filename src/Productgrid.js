@@ -13,22 +13,25 @@ const Productgrid = ({ productArray }) => {
   };
   return (
     <>
-      <div className=" grid w-full grid-cols-4 ">
+      <div className=" grid w-full grid-cols-1 min-[500px]:grid-cols-2 min-[800px]:grid-cols-3 min-[1200px]:grid-cols-4">
+        {/* <div className=" grid w-full grid-cols-4 "> */}
         {productArray.map((e, i) => (
           <div
             key={i}
-            className="px-5 pt-5 pb-3 border-[1px] border-gray-400 grid bg-white content-between min-h-[550px]"
+            className="px-5 pt-5 pb-3 border-[1px] border-gray-400 grid bg-white content-between min-h-[400px] min-[500px]:"
           >
             <div>
               <div className="grid place-items-center  py-3">
                 <img
                   src={e.imgSrc}
                   alt="image"
-                  className="object-contain h-56 "
+                  className="object-contain h-56 min-[500px]:h-32"
                 />
               </div>
               <div>
-                <h1 className="font-semibold text-base py-1">{e.heading}</h1>
+                <h1 className="font-semibold text-base min-[500px]:text-sm py-1  min-[800px]:text-lg">
+                  {e.heading}
+                </h1>
               </div>
             </div>
             <div>
@@ -42,7 +45,7 @@ const Productgrid = ({ productArray }) => {
               <div className="min-h-11 flex items-end gap-2 ">
                 <span className="flex ">
                   <span className="self-start text-lg">₹</span>
-                  <span className="text-4xl font-semibold">{e.finalPrice}</span>
+                  <span className="text-xl font-semibold">{e.finalPrice}</span>
                 </span>
                 <span className="text-slate-500 font-semibold text-sm">
                   M.R.P:
@@ -56,7 +59,7 @@ const Productgrid = ({ productArray }) => {
               <div className="flex justify-center py-2  ">
                 <button
                   onClick={() => addToCart(e)}
-                  className="bg-yellow-400 hover:bg-yellow-300 w-[80%] py-2 h-10 rounded-full text-lg active:!shadow-none outline-yellow-600"
+                  className="bg-yellow-400 hover:bg-yellow-300 w-[80%] py-1 h-8 rounded-full text-lg active:!shadow-none outline-yellow-600"
                   style={{ boxShadow: "2px 4px 8px 1px grey" }}
                 >
                   Add to cart

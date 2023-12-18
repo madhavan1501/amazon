@@ -7,7 +7,7 @@ import Aceproduct from "./Aceproduct";
 import ProductSliderOne from "./ProductSlider-1";
 import ProductSliderTwo from "./ProductSliderTwo";
 import Footer from "./Footer";
-const Home = () => {
+const Home = ({ windowWidth }) => {
   const sliderOneObj = [
     {
       imgSrc: "./assets/sliderOne/1.jpg",
@@ -245,13 +245,13 @@ const Home = () => {
 
   return (
     <>
-      <Header />
-      <div className="overflow-hidden bg-slate-100 w-full flex flex-col items-center">
+      <Header windowWidth={windowWidth} />
+      <div className="overflow-hidden bg-slate-100 w-full flex flex-col items-center min-[1100px]:items-start">
         <div className="relative w-full " id="sliderdiv">
           <ArrowBackIosNewIcon
             onClick={prevbtn}
             style={{ opacity: `${slider === 0 ? 0.5 : 1}` }}
-            className="bg-white text-black !font-extrabold !text-3xl absolute rounded-full top-1/3  left-8 !h-8 !w-8 cursor-pointer p-2 z-50"
+            className="bg-white text-black !font-extrabold !text-3xl absolute rounded-full top-1/3  left-5 !h-6 !w-6 cursor-pointer p-2 z-50 min-[1000px]:left-10 min-[1000px]:!h-8 min-[1000px]:!w-8"
           />
           <div
             className={`flex max-w-full transition-transform ease-linear duration-[350ms]`}
@@ -286,7 +286,7 @@ const Home = () => {
           <ArrowForwardIosIcon
             onClick={nextbtn}
             style={{ opacity: `${slider === -400 ? 0.5 : 1}` }}
-            className="bg-white text-black !font-extrabold !text-3xl absolute rounded-full top-1/3  right-8 !h-8 !w-8 cursor-pointer p-2 z-50"
+            className="bg-white text-black !font-extrabold  absolute rounded-full top-1/3  right-5 !h-6 !w-6 cursor-pointer p-2 z-50 min-[1000px]:right-10 min-[1000px]:!h-8 min-[1000px]:!w-8"
           />
           <div className="grid grid-rows-2 grid-cols-4 hover:cursor-pointer w-[98%] rounded overflow-hidden left-[1%]  absolute top-[60%]">
             <img
@@ -316,7 +316,8 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-2 gap-y-4 pb-4 px-8 w-full">
+        <div className="grid grid-cols-1 justify-items-center gap-4 pb-4 w-full min-[500px]:grid-cols-2 min-[500px]:gap-x-0 min-[1000px]:grid-cols-3 min-[1500px]:grid-cols-4 min-[1500px]:gap-2 min-[1500px]:gap-y-4 min-[1500px]:px-8">
+          {/* grid-cols-4 gap-2 gap-y-4 pb-4 px-8 */}
           <SingleProduct
             heading={"Starting ₹349 | Bestselling headphones"}
             imgSrc={"./assets/air-pods/1.jpg"}
@@ -413,8 +414,14 @@ const Home = () => {
             linkTo5="/mobiles"
           />
         </div>
-        <ProductSliderOne sliderOne={sliderOneObj} />
-        <div className="grid grid-cols-4 gap-2 gap-y-4 pb-4 px-8 w-full">
+        {(windowWidth > 800 ? true : false) && (
+          <div>
+            <ProductSliderOne sliderOne={sliderOneObj} />
+          </div>
+        )}
+        <div className="grid grid-cols-1 justify-items-center gap-4 pb-4 w-full min-[500px]:grid-cols-2 min-[500px]:gap-x-0 min-[1000px]:grid-cols-3 min-[1500px]:grid-cols-4 min-[1500px]:gap-2 min-[1500px]:gap-y-4 min-[1500px]:px-8">
+          {" "}
+          {/* grid grid-cols-4 gap-2 gap-y-4 pb-4 px-8 w-full */}
           <Aceproduct
             title1="Festive fasion"
             title2="Jewellery"
@@ -469,21 +476,27 @@ const Home = () => {
             linkTo5="/Fasion"
           />
         </div>
-        <ProductSliderTwo
-          sliderTwo={sliderTwo}
-          heading1={"Explore top offers in smartphones"}
-          heading2={"See all deals"}
-        />
-        <div className="w-full p-8">
-          <div className="bg-white p-6 shadow-2xl">
-            <img
-              src="./assets/train-ticket-banner.jpg"
-              alt="image"
-              className="object-contain"
+        {(windowWidth > 800 ? true : false) && (
+          <div>
+            <ProductSliderTwo
+              sliderTwo={sliderTwo}
+              heading1={"Explore top offers in smartphones"}
+              heading2={"See all deals"}
             />
+            <div className="w-full p-8">
+              <div className="bg-white p-6 shadow-2xl">
+                <img
+                  src="./assets/train-ticket-banner.jpg"
+                  alt="image"
+                  className="object-contain"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="grid grid-cols-4 gap-2 gap-y-4 pb-4 px-8 w-full">
+        )}
+        <div className="grid grid-cols-1 justify-items-center gap-4 pb-4 w-full min-[500px]:grid-cols-2 min-[500px]:gap-x-0 min-[1000px]:grid-cols-3 min-[1500px]:grid-cols-4 min-[1500px]:gap-2 min-[1500px]:gap-y-4 min-[1500px]:px-8">
+          {" "}
+          {/* grid grid-cols-4 gap-2 gap-y-4 pb-4 px-8 w-full */}
           <Aceproduct
             title1="Laptop bags & backpacks"
             title2="Keyboard and Mouse"
@@ -516,7 +529,6 @@ const Home = () => {
             linkTo4="/Grocery"
             linkTo5="/Grocery"
           />
-
           <Aceproduct
             title1="Learning & educational"
             title2="Soft toys"
@@ -550,11 +562,13 @@ const Home = () => {
             linkTo5="/AirpodsAndWatch"
           />
         </div>
-        <ProductSliderTwo
-          sliderTwo={sliderTwo_2}
-          heading1={"Shop deals in top categories"}
-          heading2={"Explore all categories"}
-        />
+        {(windowWidth > 800 ? true : false) && (
+          <ProductSliderTwo
+            sliderTwo={sliderTwo_2}
+            heading1={"Shop deals in top categories"}
+            heading2={"Explore all categories"}
+          />
+        )}
       </div>
       <Footer backToTop={"/"} />
     </>

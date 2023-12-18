@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const LoginPage = () => {
+const LoginPage2 = () => {
   return (
     <>
       <div className="grid place-items-center pb-4">
@@ -9,7 +9,7 @@ const LoginPage = () => {
           <Link to={"/"} className="flex gap-1 py-5">
             <span>
               <img
-                src="./assets/amazon-icon-2.png"
+                src="../assets/amazon-icon-2.png"
                 alt="logo"
                 className="h-8 w-min"
               />
@@ -26,28 +26,32 @@ const LoginPage = () => {
               <div>
                 <h1 className="text-3xl tracking-tight mb-4">Sign in</h1>
               </div>
-              <div className="grid gap-y-1">
-                <label htmlFor="signIn" className="text-sm font-semibold">
-                  Email or mobile phone number
+              <p className="pb-4 font-semibold">
+                madhanraju@gmail.com
+                <a
+                  href="/LoginPage"
+                  className="text-blue-500 hover:underline hover:text-orange-400 pl-1"
+                >
+                  Change
+                </a>
+              </p>
+              <div className="grid ">
+                <label htmlFor="signIn" className="text-sm font-bold">
+                  Password
                 </label>
                 <input
-                  type="email"
+                  type="text"
                   id="signIn"
                   className="border-slate-400 border-[1px] rounded-sm outline-none py-1 px-2"
-                  required
                 />
               </div>
               <div className="py-4">
-                <a href="/LoginPage/LoginPage2">
-                  {" "}
-                  <button
-                    type="submit"
-                    className="bg-yellow-300 hover:bg-yellow-400 py-[2px] w-full rounded-lg text-lg px-4 p-y-4 "
-                    style={{ boxShadow: "0px 0px 10px -7px black" }}
-                  >
-                    Continue
-                  </button>
-                </a>
+                <button
+                  className="bg-yellow-300 hover:bg-yellow-400 py-[2px] w-full rounded-lg text-lg px-4 p-y-4 "
+                  style={{ boxShadow: "0px 0px 10px -7px black" }}
+                >
+                  Continue
+                </button>
               </div>
               <div className="py-2">
                 <p className="text-xs font-medium">
@@ -67,7 +71,7 @@ const LoginPage = () => {
                   </a>
                 </p>
               </div>
-              <div className="border-b-[1px] py-4">
+              <div className=" py-4">
                 <a
                   href=""
                   className="text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
@@ -75,32 +79,6 @@ const LoginPage = () => {
                   Need help?
                 </a>
               </div>
-              <div className="pt-4">
-                <div>
-                  <p className="text-sm font-semibold">Buying for work?</p>
-                </div>
-                <div>
-                  <a
-                    href=""
-                    className="text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
-                  >
-                    Shop on Amazon Business
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className=" w-full relative border-[1px] border-slate-300">
-              <span className="left-1/2 -translate-x-1/2 -top-2 bg-white px-1 text-slate-600 absolute text-xs ">
-                New to Amazon?
-              </span>
-            </div>
-            <div className="w-full ">
-              <button
-                className="bg-white hover:bg-slate-100  border-[1px] border-slate-300 r py-1 w-full rounded-lg text-xs px-4 font-semibold"
-                style={{ boxShadow: "0px 1px 5px -3px black" }}
-              >
-                Create your Amazon account
-              </button>
             </div>
           </div>
         </div>
@@ -137,4 +115,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default LoginPage2;

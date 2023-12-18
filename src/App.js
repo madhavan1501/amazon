@@ -16,14 +16,28 @@ import Fasion from "./Fasion";
 import Cart from "./Cart";
 import { Context } from "./Context";
 import LoginPage from "./LoginPage";
-
+import { useState, useEffect } from "react";
+import LoginPage2 from "./LoginPage2";
 function App() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setWindowWidth(window.innerWidth);
+    });
+
+    return () => {
+      window.removeEventListener("resize", () => {
+        setWindowWidth(window.innerWidth);
+      });
+    };
+  }, [windowWidth]);
   return (
     <>
       <Context>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home windowWidth={windowWidth} />} />
             <Route path="/mobiles" element={<Mobile />} />
             <Route path="/laptops" element={<Laptop />} />
             <Route path="/laptopsAccessories" element={<LaptopAccessories />} />
@@ -37,7 +51,10 @@ function App() {
             <Route path="/Toys" element={<Toys />} />
             <Route path="/Fasion" element={<Fasion />} />
             <Route path="/Cart" element={<Cart />} />
-            <Route path="/LoginPage" element={<LoginPage />} />
+            <Route path="/LoginPage">
+              <Route index element={<LoginPage />} />
+              <Route path="LoginPage2" element={<LoginPage2 />} />
+            </Route>
           </Routes>
         </BrowserRouter>
       </Context>

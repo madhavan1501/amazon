@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const ProductSliderOne = ({ sliderOne }) => {
   return (
-    <div className="w-full  p-8 ">
+    <div className="p-8 w-[100vw]">
       <div className="w-full bg-white shadow-2xl px-6 py-2 overflow-hidden ">
         <div className="flex  items-center">
           <h1 className="text-2xl font-semibold">Trending deals</h1>{" "}
