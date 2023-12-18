@@ -4,7 +4,7 @@ import Header from "./Header";
 import productData from "./Context";
 
 const Cart = () => {
-  const [data, dispatch] = useContext(productData);
+  const [data] = useContext(productData);
   const [productsInCart, setProductsInCart] = useState(data);
   const [productsInSaved, setProductsInSaved] = useState(
     JSON.parse(localStorage.getItem("productsInSaved")) || []
@@ -94,7 +94,7 @@ const Cart = () => {
               <div>
                 <img
                   src="./assets/Cart/cartEmptylogo.svg"
-                  alt="image"
+                  alt="img"
                   className="h-0 w-0 min-[700px]:h-36 min-[700px]:w-56 min-[1000px]:w-72 min-[1500px]:h-[18rem] min-[1500px]:w-96"
                   // className="h-[18rem]"
                 />
@@ -166,7 +166,7 @@ const Cart = () => {
                         {/* <div className="h-48 w-48 grid place-items-center "> */}
                         <img
                           src={e.imgSrc}
-                          alt="image"
+                          alt="img"
                           className="h-44 w-40 object-contain"
                         />
                       </div>
@@ -347,7 +347,7 @@ const Cart = () => {
                         <div className="grid place-items-center ">
                           <img
                             src={e.imgSrc}
-                            alt="image"
+                            alt="img"
                             className="object-contain h-18 "
                             // className="object-contain h-40 "
                           />

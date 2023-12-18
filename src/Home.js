@@ -487,7 +487,7 @@ const Home = ({ windowWidth }) => {
               <div className="bg-white p-6 shadow-2xl">
                 <img
                   src="./assets/train-ticket-banner.jpg"
-                  alt="image"
+                  alt="img"
                   className="object-contain"
                 />
               </div>

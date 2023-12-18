@@ -52,26 +52,17 @@ const LoginPage = () => {
               <div className="py-2">
                 <p className="text-xs font-medium">
                   By continuing, you agree to Amazon's
-                  <a
-                    href=""
-                    className="px-1 text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
-                  >
+                  <a className="px-1 text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline">
                     Conditions of Use
                   </a>
                   and
-                  <a
-                    href=""
-                    className="text-xs px-1 text-blue-700 font-medium hover:text-orange-700 hover:underline"
-                  >
+                  <a className="text-xs px-1 text-blue-700 font-medium hover:text-orange-700 hover:underline">
                     Privacy Notice
                   </a>
                 </p>
               </div>
               <div className="border-b-[1px] py-4">
-                <a
-                  href=""
-                  className="text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
-                >
+                <a className="text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline">
                   Need help?
                 </a>
               </div>
@@ -80,10 +71,7 @@ const LoginPage = () => {
                   <p className="text-sm font-semibold">Buying for work?</p>
                 </div>
                 <div>
-                  <a
-                    href=""
-                    className="text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
-                  >
+                  <a className="text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline">
                     Shop on Amazon Business
                   </a>
                 </div>
@@ -107,22 +95,13 @@ const LoginPage = () => {
 
         <div className="grid place-items-center pt-6 gap-y-4">
           <div className="flex justify-between w-full">
-            <a
-              href=""
-              className=" text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
-            >
+            <a className=" text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline">
               Conditions of use
             </a>
-            <a
-              href=""
-              className=" text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
-            >
+            <a className=" text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline">
               Privacy Notice
             </a>
-            <a
-              href=""
-              className=" text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
-            >
+            <a className=" text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline">
               Help
             </a>
           </div>

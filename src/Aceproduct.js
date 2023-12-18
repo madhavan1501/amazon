@@ -31,7 +31,7 @@ const Aceproduct = ({
         >
           <img
             src={imgSrc1}
-            alt="image"
+            alt="img"
             className="object-contain object-center hover:cursor-pointer min-[500px]:h-14 min-[1100px]:h-20 "
           />
           <p className="text-slate-800 h-6 text-xs min-[700px]:text-sm min-[1100px]:font-semibold  ">
@@ -44,7 +44,7 @@ const Aceproduct = ({
         >
           <img
             src={imgSrc2}
-            alt="image"
+            alt="img"
             className="object-contain object-center hover:cursor-pointer min-[500px]:h-14 min-[1100px]:h-20"
           />
           <p className="text-slate-800 h-6 text-xs min-[700px]:text-sm min-[1100px]:font-semibold">
@@ -57,7 +57,7 @@ const Aceproduct = ({
         >
           <img
             src={imgSrc3}
-            alt="image"
+            alt="img"
             className="object-contain object-center hover:cursor-pointer min-[500px]:h-14 min-[1100px]:h-20"
           />
           <p className="text-slate-800 h-6 text-xs min-[700px]:text-sm min-[1100px]:font-semibold">
@@ -70,7 +70,7 @@ const Aceproduct = ({
         >
           <img
             src={imgSrc4}
-            alt="image"
+            alt="img"
             className="object-contain object-center hover:cursor-pointer min-[500px]:h-14 min-[1100px]:h-20"
           />
           <p className="text-slate-800 h-6 text-xs min-[700px]:text-sm min-[1100px]:font-semibold">
