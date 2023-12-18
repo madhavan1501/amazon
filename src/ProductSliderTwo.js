@@ -6,7 +6,12 @@ const ProductSliderTwo = ({ sliderTwo, heading1 = "", heading2 = "" }) => {
       <div className="w-full bg-white shadow-2xl px-6 py-2 overflow-hidden ">
         <div className="flex  items-center">
           <h1 className="text-2xl font-semibold">{heading1}</h1>
-          <a className="text-base text-blue-600 m-4 ">{heading2}</a>
+          <a
+            href="/Mobiles"
+            className="text-base text-blue-600 m-4 hover:underline hover:text-orange-400"
+          >
+            {heading2}
+          </a>
         </div>
         <div className="flex space-x-2 overflow-x-scroll ">
           {sliderTwo.map((e, i) => (

@@ -56,28 +56,19 @@ const LoginPage2 = () => {
               <div className="py-2">
                 <p className="text-xs font-medium">
                   By continuing, you agree to Amazon's
-                  <a
-                    href=""
-                    className="px-1 text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
-                  >
+                  <span className=" hover:cursor-pointer px-1 text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline">
                     Conditions of Use
-                  </a>
+                  </span>
                   and
-                  <a
-                    href=""
-                    className="text-xs px-1 text-blue-700 font-medium hover:text-orange-700 hover:underline"
-                  >
+                  <span className=" hover:cursor-pointer text-xs px-1 text-blue-700 font-medium hover:text-orange-700 hover:underline">
                     Privacy Notice
-                  </a>
+                  </span>
                 </p>
               </div>
               <div className=" py-4">
-                <a
-                  href=""
-                  className="text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
-                >
+                <span className=" hover:cursor-pointer text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline">
                   Need help?
-                </a>
+                </span>
               </div>
             </div>
           </div>
@@ -85,24 +76,15 @@ const LoginPage2 = () => {
 
         <div className="grid place-items-center pt-6 gap-y-4">
           <div className="flex justify-between w-full">
-            <a
-              href=""
-              className=" text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
-            >
+            <span className=" hover:cursor-pointer  text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline">
               Conditions of use
-            </a>
-            <a
-              href=""
-              className=" text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
-            >
+            </span>
+            <span className=" hover:cursor-pointer  text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline">
               Privacy Notice
-            </a>
-            <a
-              href=""
-              className=" text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline"
-            >
+            </span>
+            <span className=" hover:cursor-pointer  text-xs text-blue-700 font-medium hover:text-orange-700 hover:underline">
               Help
-            </a>
+            </span>
           </div>
           <div>
             <p className="text-xs">
