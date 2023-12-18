@@ -36,7 +36,7 @@ const Productgrid = ({ productArray }) => {
             <div>
               <div className="flex ">
                 {Array(e.rating)
-                  .fill("./assets/star.png")
+                  .fill("../assets/star.png")
                   .map((e, i) => (
                     <img key={i} src={e} alt="rating" className="h-3 w-3" />
                   ))}

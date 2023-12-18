@@ -37,20 +37,43 @@ function App() {
       <Context>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home windowWidth={windowWidth} />} />
-            <Route path="/mobiles" element={<Mobile />} />
-            <Route path="/laptops" element={<Laptop />} />
-            <Route path="/laptopsAccessories" element={<LaptopAccessories />} />
-            <Route path="/AirpodsAndWatch" element={<AirpodsAndWatch />} />
-            <Route path="/HomeProducts" element={<HomeProducts />} />
-            <Route path="/HomeAppliances" element={<HomeApplications />} />
-            <Route path="/KitchenProducts" element={<KitchenProducts />} />
-            <Route path="/ShoesAndBags" element={<ShoesAndBags />} />
-            <Route path="/DailyNeeds" element={<DailyNeeds />} />
-            <Route path="/Grocery" element={<Grocery />} />
-            <Route path="/Toys" element={<Toys />} />
-            <Route path="/Fasion" element={<Fasion />} />
-            <Route path="/Cart" element={<Cart />} />
+            <Route path="/">
+              <Route index element={<Home windowWidth={windowWidth} />}></Route>
+              <Route path="mobiles" element={<Mobile />} />
+              <Route path="laptops" element={<Laptop />} />
+              <Route
+                path="laptopsAccessories"
+                element={<LaptopAccessories />}
+              />
+              <Route path="AirpodsAndWatch" element={<AirpodsAndWatch />} />
+              <Route path="HomeProducts" element={<HomeProducts />} />
+              <Route path="HomeAppliances" element={<HomeApplications />} />
+              <Route path="KitchenProducts" element={<KitchenProducts />} />
+              <Route path="ShoesAndBags" element={<ShoesAndBags />} />
+              <Route path="DailyNeeds" element={<DailyNeeds />} />
+              <Route path="Grocery" element={<Grocery />} />
+              <Route path="Toys" element={<Toys />} />
+              <Route path="Fasion" element={<Fasion />} />
+            </Route>
+
+            <Route path="/Cart">
+              <Route index element={<Cart />} />
+              <Route path="mobiles" element={<Mobile />} />
+              <Route path="laptops" element={<Laptop />} />
+              <Route
+                path="laptopsAccessories"
+                element={<LaptopAccessories />}
+              />
+              <Route path="AirpodsAndWatch" element={<AirpodsAndWatch />} />
+              <Route path="HomeProducts" element={<HomeProducts />} />
+              <Route path="HomeAppliances" element={<HomeApplications />} />
+              <Route path="KitchenProducts" element={<KitchenProducts />} />
+              <Route path="ShoesAndBags" element={<ShoesAndBags />} />
+              <Route path="DailyNeeds" element={<DailyNeeds />} />
+              <Route path="Grocery" element={<Grocery />} />
+              <Route path="Toys" element={<Toys />} />
+              <Route path="Fasion" element={<Fasion />} />
+            </Route>
             <Route path="/LoginPage">
               <Route index element={<LoginPage />} />
               <Route path="LoginPage2" element={<LoginPage2 />} />

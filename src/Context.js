@@ -14,6 +14,9 @@ export const Context = ({ children }) => {
         return prevData;
       }
 
+      case "Update": {
+        return action.value;
+      }
       default:
         return state;
     }

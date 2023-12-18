@@ -5,7 +5,7 @@ import productData from "./Context";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
-  const [data] = useContext(productData);
+  const [data, dispatch] = useContext(productData);
   const [productsInCart, setProductsInCart] = useState(data);
   const [productsInSaved, setProductsInSaved] = useState(
     JSON.parse(localStorage.getItem("productsInSaved")) || []
@@ -57,6 +57,7 @@ const Cart = () => {
       } else return e;
     });
     setProductsInCart(modifidedCart);
+    dispatch({ type: "Update", value: modifidedCart });
   };
   const savedBtnDelete = (index) => {
     const modifidedCart = productsInSaved.filter((e, i) => i !== index);
@@ -66,6 +67,7 @@ const Cart = () => {
   const btnDelete = (index) => {
     const modifidedCart = productsInCart.filter((e, i) => i !== index);
     setProductsInCart(modifidedCart);
+    dispatch({ type: "Update", value: modifidedCart });
     localStorage.setItem("productsInCart", JSON.stringify(modifidedCart));
   };
   const addToSaveLater = (index) => {
@@ -81,6 +83,7 @@ const Cart = () => {
     setProductsInCart(modifided);
     localStorage.setItem("productsInCart", JSON.stringify(modifided));
     savedBtnDelete(index);
+    dispatch({ type: "Update", value: modifided });
   };
   return (
     <>
@@ -226,12 +229,12 @@ const Cart = () => {
                               >
                                 Save for later
                               </button>
-                              <a
+                              <Link
                                 className="text-blue-500 hover:underline text-xs min-[700px]:text-sm hover:text-orange-400 "
-                                href={e.productsPath}
+                                to={e.productsPath}
                               >
                                 See more like this
-                              </a>
+                              </Link>
                             </div>
                             <div className="self-center">
                               {" "}
