@@ -10,8 +10,8 @@ const Header = ({ windowWidth }) => {
       <div
         className="flex justify-between items-center gap-2 min-[400px]:gap-x-5 h-[65px] min-[500px]:gap-x-10 px-2 min-[1500px]:gap-12 " //gap-12
       >
-        <a
-          href="/"
+        <Link
+          to="/"
           className=" border-white p-1 w-16 min-[400px]:w-20 grid place-items-center hover:border-2 min-[1500px]:w-36 rounded-lg" //w-36 py-1
         >
           <img
@@ -19,7 +19,7 @@ const Header = ({ windowWidth }) => {
             alt="logo"
             className="min-[400px]:h-6 cursor-pointer select-none min-[1500px]:h-10" //h-10
           />
-        </a>
+        </Link>
         <div
           className="min-[400px]:h-8 h-7 relative min-[400px]:min-w-[200px] flex-1 w-40 min-[500px]:min-w-[250px] min-[700px]:min-w-300px min-[1000px]:min-w-[250px] min-[1500px]:h-10" //h-10
         >
@@ -45,23 +45,23 @@ const Header = ({ windowWidth }) => {
             <p className="font-bold select-none">& orders</p>
           </div>
           <div className=" text-xl mt-3 cursor-pointer font-bold h-fit  hover:border-2 p-1 rounded-lg self-start">
-            <a
-              href="https://www.primevideo.com/"
+            <Link
+              to="https://www.primevideo.com/"
               target="blank"
               className="select-none"
             >
               prime
-            </a>
+            </Link>
           </div>
           <div className=" grid items-center justify-end">
             <div className=" border-white min-[400px]:p-2 p-1 rounded-lg hover:border-2 ">
-              <a
-                href="/Cart"
+              <Link
+                to="/Cart"
                 className="  text-base  flex items-center cursor-pointer "
               >
                 <ShoppingCartSharpIcon />
                 <p>Cart</p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -69,12 +69,12 @@ const Header = ({ windowWidth }) => {
       {(windowWidth > 1000 ? false : true) && (
         <div className=" grid items-center justify-end">
           <div className="border-2 border-white min-[400px]:p-2 p-1 rounded-lg">
-            <a
-              href="/Cart"
+            <Link
+              to="/Cart"
               className="  text-base  flex items-center cursor-pointer "
             >
               <ShoppingCartSharpIcon />
-            </a>
+            </Link>
           </div>
         </div>
       )}

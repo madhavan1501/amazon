@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import productData from "./Context";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const [data] = useContext(productData);
@@ -113,18 +114,18 @@ const Cart = () => {
                   shop todays's deals
                 </a>
                 <div className="flex space-x-4 ">
-                  <a href="/LoginPage">
+                  <Link to="/LoginPage">
                     <button className="bg-yellow-400 hover:bg-yellow-300 py-1 rounded-md text-xs px-4 min-[1000px]:text-lg">
                       {/* <button className="bg-yellow-400 hover:bg-yellow-300 py-[5px] rounded-md text-lg px-4"> */}
                       Sign in to your account
                     </button>
-                  </a>
-                  <a href="/LoginPage">
+                  </Link>
+                  <Link to="/LoginPage">
                     <button className="border-[1px] border-slate-400 text-xs  py-1 rounded-md px-4 hover:bg-slate-100 font-semibold min-[1000px]:text-lg">
                       {/* <button className="border-[1px] border-slate-400 rounded-md px-4 hover:bg-slate-100 font-semibold"> */}
                       Sign up now
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -320,11 +321,11 @@ const Cart = () => {
                   </div>
                 </div>
                 <div className="place-self-center w-full">
-                  <a href="/LoginPage">
+                  <Link to="/LoginPage">
                     <button className="bg-yellow-400 hover:bg-yellow-300 py-[2px] w-full rounded-md text-lg px-4 ">
                       Proceed to Buy
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </section>
@@ -386,12 +387,12 @@ const Cart = () => {
                             Delete
                           </button>
                           <button>
-                            <a
+                            <Link
                               className="text-blue-500 hover:underline  hover:text-orange-400 text-xs min-[500px]:text-sm min-[700px]:text-base"
-                              href={e.productsPath}
+                              to={e.productsPath}
                             >
                               See more
-                            </a>
+                            </Link>
                           </button>
                         </div>
                       </div>
@@ -418,7 +419,7 @@ const Cart = () => {
           </p>
         </div>
       </div>
-      <Footer backToTop={"/Cart"} />
+      <Footer backToTop={"/"} />
     </>
   );
 };

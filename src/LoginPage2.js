@@ -28,12 +28,12 @@ const LoginPage2 = () => {
               </div>
               <p className="pb-4 font-semibold">
                 madhanraju@gmail.com
-                <a
-                  href="/LoginPage"
+                <Link
+                  to="/LoginPage"
                   className="text-blue-500 hover:underline hover:text-orange-400 pl-1"
                 >
                   Change
-                </a>
+                </Link>
               </p>
               <div className="grid ">
                 <label htmlFor="signIn" className="text-sm font-bold">

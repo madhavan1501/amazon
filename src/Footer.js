@@ -1,22 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = ({ backToTop }) => {
   return (
     <>
       <div className="grid place-items-center space-y-1 py-8 border-t-[1px] border-slate-400">
         <p className="text-sm ">See personalized recommendations</p>
-        <a href="/LoginPage">
+        <Link to="/LoginPage">
           <button className="bg-yellow-400 text-sm font-semibold py-1 px-28 rounded-md">
             Sign In
           </button>
-        </a>
+        </Link>
         <p className="text-xs font-semibold">
           New costumer?
-          <a href="/LoginPage">
+          <Link to="/LoginPage">
             <span className="text-xs font-semibold text-blue-600 ml-2">
               Start here
             </span>
-          </a>
+          </Link>
         </p>
       </div>
 
@@ -116,13 +117,13 @@ const Footer = ({ backToTop }) => {
       </div>
       <div className="bg-gray-800 grid place-items-center py-2">
         <div className="grid place-items-center space-y-6">
-          <a href="/">
+          <Link to="/">
             <img
               src="../assets/logo.webp"
               alt="logo"
               className=" h-8 cursor-pointer"
             />
-          </a>
+          </Link>
           <div className="text-white grid place-items-start text-xs space-y-1 font-semibold w-80 overflow-hidden p-5 min-[500px]:w-full  min-[850px]:place-items-center">
             {/* <div className="text-white grid place-items-center text-xs space-y-1 font-semibold "> */}
             <ul className="flex space-x-2  text-gray-300 ">

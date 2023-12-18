@@ -189,7 +189,7 @@ const Fasion = () => {
     <>
       <Header />
       <Productgrid productArray={dressList} />
-      <Footer backToTop={"/Fasion"} />
+      <Footer backToTop={"/"} />
     </>
   );
 };

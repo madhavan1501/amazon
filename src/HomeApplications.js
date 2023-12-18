@@ -153,7 +153,7 @@ const HomeApplications = () => {
     <>
       <Header />
       <Productgrid productArray={HomeApplicationsList} />
-      <Footer backToTop={"/HomeAppliances"} />
+      <Footer backToTop={"/"} />
     </>
   );
 };

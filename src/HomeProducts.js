@@ -189,7 +189,7 @@ const HomeProducts = () => {
     <>
       <Header />
       <Productgrid productArray={HomeProductsList} />
-      <Footer backToTop={"/HomeProducts"} />
+      <Footer backToTop={"/"} />
     </>
   );
 };

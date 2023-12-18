@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Aceproduct = ({
   title1 = "title",
@@ -25,8 +26,8 @@ const Aceproduct = ({
       </h1>
       <div className="grid grid-cols-2 h-[200px] w-[250px] gap-2 overflow-hidden min-[500px]:w-[200px] min-[500px]:place-items-center min-[700px]:w-[250px] min-[700px]:gap-0 min-[700px]:items-start  min-[1000px]:w-full  min-[1000px]:gap-2  min-[1000px]:justify-center min-[1100px]:w-[300px] min-[1100px]:h-[250px] min-[1300px]:w-full min-[1300px]:h-[280px] min-[1500px]:h-[250px] min-[1500px]:w-[300px]">
         {/* grid grid-cols-2 h-[250px] w-[300px] gap-2 overflow-hidden */}
-        <a
-          href={linkTo1}
+        <Link
+          to={linkTo1}
           className="min-[500px]:w-20  min-[1000px]:w-full grid  min-[1000px]:justify-items-center "
         >
           <img
@@ -37,9 +38,9 @@ const Aceproduct = ({
           <p className="text-slate-800 h-6 text-xs min-[700px]:text-sm min-[1100px]:font-semibold  ">
             {title1}
           </p>
-        </a>
-        <a
-          href={linkTo2}
+        </Link>
+        <Link
+          to={linkTo2}
           className="min-[500px]:w-20  min-[1000px]:w-full grid  min-[1000px]:justify-items-center"
         >
           <img
@@ -50,9 +51,9 @@ const Aceproduct = ({
           <p className="text-slate-800 h-6 text-xs min-[700px]:text-sm min-[1100px]:font-semibold">
             {title2}
           </p>
-        </a>
-        <a
-          href={linkTo3}
+        </Link>
+        <Link
+          to={linkTo3}
           className="min-[500px]:w-20  min-[1000px]:w-full grid  min-[1000px]:justify-items-center"
         >
           <img
@@ -63,9 +64,9 @@ const Aceproduct = ({
           <p className="text-slate-800 h-6 text-xs min-[700px]:text-sm min-[1100px]:font-semibold">
             {title3}
           </p>
-        </a>
-        <a
-          href={linkTo4}
+        </Link>
+        <Link
+          to={linkTo4}
           className="min-[500px]:w-20  min-[1000px]:w-full grid  min-[1000px]:justify-items-center"
         >
           <img
@@ -76,14 +77,14 @@ const Aceproduct = ({
           <p className="text-slate-800 h-6 text-xs min-[700px]:text-sm min-[1100px]:font-semibold">
             {title4}
           </p>
-        </a>
+        </Link>
       </div>
-      <a
-        href={linkTo5}
+      <Link
+        to={linkTo5}
         className="inline-block text-blue-600  hover:text-orange-500 hover:cursor-pointer min-[1100px]:text-lg"
       >
         See all offers
-      </a>
+      </Link>
     </div>
     // <Outlet></Outlet>
   );

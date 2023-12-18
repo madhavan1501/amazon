@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SingleProduct = ({ heading = "title", imgSrc = "hi", linkTo = "/" }) => {
   return (
@@ -8,19 +9,19 @@ const SingleProduct = ({ heading = "title", imgSrc = "hi", linkTo = "/" }) => {
         {/* text-xl  w-full h-16 font-bold overflow-hidden */}
         {heading}
       </h1>
-      <a href={linkTo}>
+      <Link to={linkTo}>
         <img
           src={imgSrc}
           alt="img"
           className="object-contain object-center h-[180px] w-[300px] hover:cursor-pointer min-[700px]:h-[200px] min-[1100px]:h-[250px] min-[1300px]:h-[280px] min-[1300px]:w-full min-[1500px]:h-[250px]"
         />
-      </a>
-      <a
-        href={linkTo}
+      </Link>
+      <Link
+        to={linkTo}
         className="inline-block text-blue-600 hover:text-orange-500 hover:cursor-pointer min-[1100px]:text-lg"
       >
         See all offers
-      </a>
+      </Link>
     </div>
   );
 };

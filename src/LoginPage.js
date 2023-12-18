@@ -38,7 +38,7 @@ const LoginPage = () => {
                 />
               </div>
               <div className="py-4">
-                <a href="/LoginPage/LoginPage2">
+                <Link to="/LoginPage/LoginPage2">
                   {" "}
                   <button
                     type="submit"
@@ -47,7 +47,7 @@ const LoginPage = () => {
                   >
                     Continue
                   </button>
-                </a>
+                </Link>
               </div>
               <div className="py-2">
                 <p className="text-xs font-medium">

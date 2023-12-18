@@ -117,7 +117,7 @@ const LaptopAccessories = () => {
     <>
       <Header />
       <Productgrid productArray={Accessorieslist} />
-      <Footer backToTop={"/laptopsAccessories"} />
+      <Footer backToTop={"/"} />
     </>
   );
 };
