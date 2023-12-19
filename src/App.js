@@ -18,6 +18,7 @@ import { Context } from "./Context";
 import LoginPage from "./LoginPage";
 import { useState, useEffect } from "react";
 import LoginPage2 from "./LoginPage2";
+import ToTop from "./ToTop";
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -36,6 +37,7 @@ function App() {
     <>
       <Context>
         <BrowserRouter>
+          <ToTop />
           <Routes>
             <Route path="/">
               <Route index element={<Home windowWidth={windowWidth} />}></Route>

@@ -27,7 +27,7 @@ const LoginPage2 = () => {
                 <h1 className="text-3xl tracking-tight mb-4">Sign in</h1>
               </div>
               <p className="pb-4 font-semibold">
-                madhanraju@gmail.com
+                madhanraju1209@gmail.com
                 <Link
                   to="/LoginPage"
                   className="text-blue-500 hover:underline hover:text-orange-400 pl-1"
