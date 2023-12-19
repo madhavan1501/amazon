@@ -190,7 +190,7 @@ const Laptop = () => {
     <>
       <Header />
       <Productgrid productArray={laptopList} />
-      <Footer backToTop={"/"} />
+      <Footer />
     </>
   );
 };

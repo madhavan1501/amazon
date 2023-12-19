@@ -192,7 +192,7 @@ const AirpodsAndWatch = () => {
     <>
       <Header />
       <Productgrid productArray={watchList} />
-      <Footer backToTop={"/AirpodsAndWatch"} />
+      <Footer />
     </>
   );
 };

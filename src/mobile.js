@@ -210,7 +210,7 @@ const Mobile = () => {
     <>
       <Header />
       <Productgrid productArray={mobileList} />
-      <Footer backToTop={"/"} />
+      <Footer />
     </>
   );
 };

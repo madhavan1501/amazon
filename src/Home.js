@@ -570,7 +570,7 @@ const Home = ({ windowWidth }) => {
           />
         )}
       </div>
-      <Footer backToTop={"/"} />
+      <Footer />
     </>
   );
 };

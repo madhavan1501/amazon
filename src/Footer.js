@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Footer = ({ backToTop }) => {
+const Footer = () => {
   return (
     <>
       <div className="grid place-items-center space-y-1 py-8 border-t-[1px] border-slate-400">
@@ -21,12 +21,14 @@ const Footer = ({ backToTop }) => {
         </p>
       </div>
 
-      <a
-        href={backToTop}
+      <button
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
         className="py-3 block text-center bg-gray-700 hover:bg-gray-600 text-white w-full"
       >
         Back to top
-      </a>
+      </button>
 
       <div className="bg-gray-800 w-full text-white grid place-items-center py-2 border-b-[1px] border-b-slate-700">
         {/* <div className="bg-gray-800 w-full text-white grid place-items-center py-12 border-b-[1px] border-b-slate-700"> */}

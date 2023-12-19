@@ -153,7 +153,7 @@ const DailyNeeds = () => {
     <>
       <Header />
       <Productgrid productArray={DailyNeeds} />
-      <Footer backToTop={"/"} />
+      <Footer />
     </>
   );
 };

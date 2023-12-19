@@ -422,7 +422,7 @@ const Cart = () => {
           </p>
         </div>
       </div>
-      <Footer backToTop={"/"} />
+      <Footer />
     </>
   );
 };
