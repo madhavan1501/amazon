@@ -316,7 +316,7 @@ const Home = ({ windowWidth }) => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 justify-items-center gap-4 pb-4 w-full min-[500px]:grid-cols-2 min-[500px]:gap-x-0 min-[1000px]:grid-cols-3 min-[1500px]:grid-cols-4 min-[1500px]:gap-2 min-[1500px]:gap-y-4 min-[1500px]:px-8">
+        <div className="grid grid-cols-1 justify-items-center gap-4 pb-4 w-full min-[500px]:grid-cols-2 min-[500px]:gap-x-0 min-[880px]:grid-cols-3 min-[1200px]:grid-cols-4 min-[1500px]:gap-2 min-[1500px]:gap-y-4 min-[1500px]:px-8">
           {/* grid-cols-4 gap-2 gap-y-4 pb-4 px-8 */}
           <SingleProduct
             heading={"Starting ₹349 | Bestselling headphones"}
@@ -419,7 +419,7 @@ const Home = ({ windowWidth }) => {
             <ProductSliderOne sliderOne={sliderOneObj} />
           </div>
         )}
-        <div className="grid grid-cols-1 justify-items-center gap-4 pb-4 w-full min-[500px]:grid-cols-2 min-[500px]:gap-x-0 min-[1000px]:grid-cols-3 min-[1500px]:grid-cols-4 min-[1500px]:gap-2 min-[1500px]:gap-y-4 min-[1500px]:px-8">
+        <div className="grid grid-cols-1 justify-items-center gap-4 pb-4 w-full min-[500px]:grid-cols-2 min-[500px]:gap-x-0 min-[1000px]:grid-cols-3 min-[1200px]:grid-cols-4 min-[1500px]:gap-2 min-[1500px]:gap-y-4 min-[1500px]:px-8">
           {" "}
           {/* grid grid-cols-4 gap-2 gap-y-4 pb-4 px-8 w-full */}
           <Aceproduct
@@ -494,7 +494,7 @@ const Home = ({ windowWidth }) => {
             </div>
           </div>
         )}
-        <div className="grid grid-cols-1 justify-items-center gap-4 pb-4 w-full min-[500px]:grid-cols-2 min-[500px]:gap-x-0 min-[1000px]:grid-cols-3 min-[1500px]:grid-cols-4 min-[1500px]:gap-2 min-[1500px]:gap-y-4 min-[1500px]:px-8">
+        <div className="grid grid-cols-1 justify-items-center gap-4 pb-4 w-full min-[500px]:grid-cols-2 min-[500px]:gap-x-0 min-[1000px]:grid-cols-3 min-[1200px]:grid-cols-4 min-[1500px]:gap-2 min-[1500px]:gap-y-4 min-[1500px]:px-8">
           {" "}
           {/* grid grid-cols-4 gap-2 gap-y-4 pb-4 px-8 w-full */}
           <Aceproduct
