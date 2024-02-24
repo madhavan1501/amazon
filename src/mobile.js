@@ -122,8 +122,8 @@ const Mobile = () => {
       rating: 4,
       finalPrice: "1,35,999",
       productsPath: "Mobiles",
-      mrp: "1,39,999",
-      offerPercent: "3",
+      mrp: "99,999",
+      offerPercent: "30",
     },
     {
       imgSrc: "../assets/productGrid/mobiles/13.webp",
