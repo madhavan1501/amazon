@@ -120,9 +120,9 @@ const Mobile = () => {
       heading:
         "Oneplus Open (Emerald Dusk, 16GB RAM, 512GB Storage)|OxygenOS 13.2: Game-changing multitasking you’ll finally love using. Dual split screen and fast focus Drag and drop sharing Triple split-screen",
       rating: 4,
-      finalPrice: "1,35,999",
+      finalPrice: "99,999",
       productsPath: "Mobiles",
-      mrp: "99,999",
+      mrp: "1,35,999",
       offerPercent: "30",
     },
     {
